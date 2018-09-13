@@ -1,0 +1,68 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "centralus"
+        },
+        "VMscalesetName": {
+            "value": "HorizontalScale"
+        },
+        "VMsize": {
+            "value": "Standard_DS1_v2"
+        },
+        "adminUsername": {
+            "value": "script"
+        },
+        "instanceCount": {
+            "value": "1"
+        },
+        "singlePlacementGroup": {
+            "value": "true"
+        },
+        "priority": {
+            "value": "Regular"
+        },
+        "PublicIPName": {
+            "value": "horizontalscale"
+        },
+        "PublicIPLabel": {
+            "value": "horizontalscale"
+        },
+        "ipAllocationMethod": {
+            "value": "Static"
+        },
+        "skuType": {
+            "value": "Standard"
+        },
+        "image": {
+            "value": {
+                "id": "/subscriptions/d2a90aa0-d321-49fb-990f-c54098df09fd/resourceGroups/Demo/providers/Microsoft.Compute/images/VM-Demo-image-20180906144730"
+            }
+        },
+        "autoscaleDefault": {
+            "value": "1"
+        },
+        "autoscaleMax": {
+            "value": "10"
+        },
+        "autoscaleMin": {
+            "value": "1"
+        },
+        "scaleInCPUPercentageThreshold": {
+            "value": "40"
+        },
+        "scaleInInterval": {
+            "value": "1"
+        },
+        "scaleOutCPUPercentageThreshold": {
+            "value": "70"
+        },
+        "scaleOutInterval": {
+            "value": "1"
+        },
+        "adminPassword": {
+            "value": "qwerty_12345"
+        }
+    }
+}
