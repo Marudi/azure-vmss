@@ -1,5 +1,9 @@
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
+<a href="https://azuredeploy.net/?repository=https://github.com/user/repo" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+
 ### Deploy Vertical Scale - Medfar ###
 For Vertical Scale, you can use either a PowerShell script or template for the deployment. In script deployment you have to run the script and everything will be done by it and in template deployment first you have to run template and when it gets complete then you have to run scaling.ps1 script from template folder to upload other scripts on the portal. 
 
